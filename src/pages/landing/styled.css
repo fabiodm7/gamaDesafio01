@@ -3,16 +3,17 @@ html,body {
     height: 100vh;
     background-color: #000;
     font-family: sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
 }
 
 h1,h2 {
-    color: #fff;
     font-weight: 300;
     text-transform: uppercase;
 }
 
 p {
-    color: #fff;
     font-weight: 300;
 }
 
@@ -20,13 +21,32 @@ strong {
     font-weight: 600;
 }
 
+form {
+    margin: 0 auto;
+    width: 500px;
+    padding: 1em;
+}
+
+label {
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+
 input {
-    height: 1.5rem;
-    width: 100%;
+    font: 1em sans-serif;
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid #5b5b5b;
+}
+
+input:focus {
+    border-color: #5b5b5b;
 }
 
 .mainContent {
     display: flex;
+    height: 80%;
     justify-content: space-around;
     margin-top: 50px;
     background-color: #282c34;
@@ -43,7 +63,7 @@ input {
     padding: 0.5rem;
 }
 
-.button {
+button {
     background-color: #4CAF50;
     border: #4CAF50;
     color: white;
@@ -55,6 +75,6 @@ input {
     border-radius: 4px;
 }
 
-.button:hover {
+button:hover {
     background-color: #0023bd;
 }
