@@ -28,7 +28,7 @@ export const CssStrong = styled.strong`
     font-weight: 600;
 `
 
-export const CssFormulario = styled.formulario`
+export const CssFormulario = styled.div`
     margin: 0 auto;
     width: 500px;
     padding: 1em;
@@ -52,7 +52,7 @@ export const CssInput = styled.input`
     border: 1px solid #5b5b5b;
 `
 
-export const CssMainContent = styled.mainContent`
+export const CssMainContent = styled.div`
     display: flex;
     height: 80%;
     justify-content: space-around;
@@ -60,7 +60,7 @@ export const CssMainContent = styled.mainContent`
     background-color: #282c34;
 `
 
-export const CssContainer = styled.container`
+export const CssContainer = styled.div`
     min-width: 30rem;
     padding: 0.5rem;
 `
