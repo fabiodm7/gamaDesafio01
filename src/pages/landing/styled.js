@@ -1,13 +1,26 @@
 import styled from 'styled-components';
 
-export const CssBody = styled.body`
+export const CssBody = styled.div`
     width: 100vw;
     height: 100vh;
     background-color: #000;
     font-family: sans-serif;
-    color: #fff;
     margin: 0;
+    color: #fff;
     padding: 0;
+`
+
+export const CssMainContent = styled.div`
+    display: flex;
+    height: 80%;
+    justify-content: space-around;
+    margin-top: 50px;
+    background-color: #282c34;
+`
+
+export const CssContainer = styled.div`
+    min-width: 30rem;
+    padding: 0.5rem;
 `
 
 export const CssH1 = styled.h1`
@@ -30,11 +43,11 @@ export const CssStrong = styled.strong`
 
 export const CssFormulario = styled.div`
     margin: 0 auto;
+    background-color: #5b5b5b;
     width: 500px;
     padding: 1em;
 `
 export const CssForm = styled.form`
-    background-color: #5b5b5b;
     min-width: 30rem;
     padding: 0.5rem;
 `
@@ -52,18 +65,6 @@ export const CssInput = styled.input`
     border: 1px solid #5b5b5b;
 `
 
-export const CssMainContent = styled.div`
-    display: flex;
-    height: 80%;
-    justify-content: space-around;
-    margin-top: 50px;
-    background-color: #282c34;
-`
-
-export const CssContainer = styled.div`
-    min-width: 30rem;
-    padding: 0.5rem;
-`
 
 export const CssButton = styled.button`
     background-color: #4CAF50;
