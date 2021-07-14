@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const CssBody = styled.div`
     width: 100vw;
@@ -6,30 +7,30 @@ export const CssBody = styled.div`
     background-color: #000;
     font-family: sans-serif;
     margin: 0;
+    padding-top: 50px;
     color: #fff;
-    padding: 0;
 `
 
 export const CssMainContent = styled.div`
     display: flex;
     height: 80%;
     justify-content: space-around;
-    margin-top: 50px;
     background-color: #282c34;
 `
 
 export const CssContainer = styled.div`
-    min-width: 30rem;
-    padding: 0.5rem;
+    padding: 1rem 4rem 1rem 4rem;
 `
 
 export const CssH1 = styled.h1`
     font-weight: 300;
+    font-size: 70px;
     text-transform: uppercase;
 `
 
 export const CssH2 = styled.h2`
     font-weight: 300;
+    font-size: 35px;
     text-transform: uppercase;
 `
 
@@ -44,17 +45,16 @@ export const CssStrong = styled.strong`
 export const CssFormulario = styled.div`
     margin: 0 auto;
     background-color: #5b5b5b;
-    width: 500px;
-    padding: 1em;
+    width: 25%;
+    padding: 2rem;
 `
 export const CssForm = styled.form`
-    min-width: 30rem;
+    width: 25%;
     padding: 0.5rem;
 `
 
 export const CssLabel = styled.label`
     display: inline-block;
-    width: 90px;
     text-align: right;
 `
 
@@ -92,4 +92,15 @@ export const CssImg = styled.img`
     padding: .5em;
     width: 125px;
     height: auto;
+`
+
+export const CssLink = styled(Link)`
+    display: flex;
+    width: 100%;
+    text-align: center;
+    margin: 2rem auto;
+    background-color: #000;
+    padding: .5rem 0;
+    color: #fff;
+    text-decoration: none;
 `

@@ -1,7 +1,7 @@
 import '../../App.css';
 import React, { useState } from 'react';
 import * as s from './styled';
-import imgExemple from './logo512.png'
+import imgExemple from './logo512.png';
 
 function App(props) {
     const [ nome, setNome ] = useState('');
@@ -23,9 +23,15 @@ function App(props) {
                     <s.CssH1><s.CssStrong>Black</s.CssStrong> Friday</s.CssH1>
                     <s.CssP>Se ligas nas promoções que a Hiring Coders preparou pra você!</s.CssP>
                     <s.CssUl>
-                        <s.CssLi><s.CssImg src={imgExemple}/></s.CssLi>
-                        <s.CssLi><s.CssImg src={imgExemple}/></s.CssLi>
-                        <s.CssLi><s.CssImg src={imgExemple}/></s.CssLi>
+                        <s.CssLi><s.CssLink to="/">
+                            <s.CssImg src={imgExemple}/>
+                        </s.CssLink></s.CssLi>
+                        <s.CssLi><s.CssLink to="/">
+                            <s.CssImg src={imgExemple}/>
+                        </s.CssLink></s.CssLi>
+                        <s.CssLi><s.CssLink to="/">
+                            <s.CssImg src={imgExemple}/>
+                        </s.CssLink></s.CssLi>
                     </s.CssUl>
                 </s.CssContainer>
                 <s.CssFormulario>
