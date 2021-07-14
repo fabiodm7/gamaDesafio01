@@ -76,4 +76,20 @@ export const CssButton = styled.button`
     display: inline-block;
     font-size: 16px;
     border-radius: 4px;
+    margin: 15px;
+`
+
+export const CssUl = styled.ul`
+    display: flex;
+    list-style: none;
+`
+
+export const CssLi = styled.li`
+    padding: .5em;
+`
+
+export const CssImg = styled.img`
+    padding: .5em;
+    width: 125px;
+    height: auto;
 `

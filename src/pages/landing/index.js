@@ -1,13 +1,11 @@
 import '../../App.css';
 import React, { useState } from 'react';
 import * as s from './styled';
-// import { useHistory } from 'react-router-dom'
+import imgExemple from './logo512.png'
 
 function App(props) {
-    // const history = useHistory();
     const [ nome, setNome ] = useState('');
     const [ email, setEmail ] = useState('');
-    // const [ erro, setErro ] = useState(false);
 
     function handleInscricao(){
         const dados = {
@@ -22,9 +20,13 @@ function App(props) {
         <s.CssBody>
             <s.CssMainContent>
                 <s.CssContainer>
-                    <s.CssH1><s.CssStrong>Black</s.CssStrong></s.CssH1>
-                    <s.CssH1>Friday</s.CssH1>
+                    <s.CssH1><s.CssStrong>Black</s.CssStrong> Friday</s.CssH1>
                     <s.CssP>Se ligas nas promoções que a Hiring Coders preparou pra você!</s.CssP>
+                    <s.CssUl>
+                        <s.CssLi><s.CssImg src={imgExemple}/></s.CssLi>
+                        <s.CssLi><s.CssImg src={imgExemple}/></s.CssLi>
+                        <s.CssLi><s.CssImg src={imgExemple}/></s.CssLi>
+                    </s.CssUl>
                 </s.CssContainer>
                 <s.CssFormulario>
                     <s.CssH2>Não perca nenhuma promoção!</s.CssH2>
